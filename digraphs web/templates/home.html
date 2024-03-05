@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>DiGraph </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <style>
+      body{
+           background-image: url('/static/bagr.jpg');
+         }
+
+      
+         h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 4rem;
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+  animation: glow 2s infinite;
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+  }
+  to {
+    text-shadow: 0 0 20px #ff9900, 0 0 30px #ff9900, 0 0 40px #ff9900, 0 0 50px #ff9900, 0 0 60px #ff9900, 0 0 70px #ff9900, 0 0 80px #ff9900;
+  }
+}
+
+
+      h2{
+        color: rgb(70,70,70);
+      }
+
+       </style>
+  </head>
+  <body>
+
+    <div class="container" id = 'n1'>
+      <h1 class="text-center mt-2 mb-4">
+        DiGraph
+      </h1>
+      <br>
+      <br>
+      <div class="row" style="margin-bottom:32px">
+      <br>
+      <br>
+      <br> 
+      <br>
+      <br>
+      <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <div class = "text-center">
+    
+
+      <p class = "lead"> Add details of the book or see the DiGraph of the database          </p>
+      <br>
+      <br>
+      <div class="text-center">
+        <a href="/add"><button type="button" class="btn btn-outline-light me-2">Add details</button></a>
+        <br>
+        <br>
+        <br>
+        or
+        <br>
+        <br>
+        <br>
+
+        <a href="/digraph"><button type="button" class="btn btn-warning">DiGraph</button></a>
+        </div>
+      </div>
+      </div>
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    {% include 'footer.html' %}
+  </body>
+</html>
